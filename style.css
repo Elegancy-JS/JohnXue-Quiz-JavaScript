@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  font-size: 30px;
+}
+
+body.wrong {
+  background-color: red;
+}
+
+body.correct {
+  background-color: green;
+}
+
+.beginning,
+.end {
+  width: 40%;
+  max-width: 80%;
+  background-color: honeydew;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 10px 2px;
+  font-weight: bold;
+}
+
+.blessing {
+  color: red;
+}
+
+.questionCard {
+  width: 30%;
+  max-width: 80%;
+  background-color: honeydew;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 10px 2px;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px;
+}
+
+.btn {
+  background-color: rgb(129, 7, 7);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 10px;
+  /* border: 1px solid rgb(75, 58, 58); */
+}
+
+.btn:hover {
+  background-color: blue;
+  transform: scale(1.05);
+}
+
+.btn.correct {
+  background-color: green;
+}
+
+.btn.wrong {
+  background-color: red;
+}
+
+.hide {
+  display: none;
+}
